@@ -81,7 +81,7 @@ public class VentanaPaint extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jCheckBox1 = new javax.swing.JCheckBox();
-        jButton3 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         jButton1.setText("Cancelar");
 
@@ -149,10 +149,11 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Color");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("COLOR");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton3MousePressed(evt);
+                jLabel1MousePressed(evt);
             }
         });
 
@@ -162,9 +163,9 @@ public class VentanaPaint extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox1)
-                    .addComponent(jButton3))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jCheckBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -176,7 +177,7 @@ public class VentanaPaint extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jCheckBox1)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
@@ -198,7 +199,7 @@ public class VentanaPaint extends javax.swing.JFrame {
 
     private void jPanel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MousePressed
         //inicializo la ellipse que usaré para dibujar en el buffer
-        auxiliar = new Circulo(evt.getX(), evt.getY(), 1, Color.BLUE, jCheckBox1.isSelected());    
+        auxiliar = new Circulo(evt.getX(), evt.getY(), 1, Color.MAGENTA, jCheckBox1.isSelected());    
     }//GEN-LAST:event_jPanel1MousePressed
 
     private void jPanel1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseReleased
@@ -213,9 +214,9 @@ public class VentanaPaint extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
-    private void jButton3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MousePressed
+    private void jLabel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MousePressed
         jDialog1.setVisible(true);
-    }//GEN-LAST:event_jButton3MousePressed
+    }//GEN-LAST:event_jLabel1MousePressed
 
     /**
      * @param args the command line arguments
@@ -255,10 +256,10 @@ public class VentanaPaint extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JDialog jDialog1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

@@ -76,9 +76,9 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jCheckBox1" max="32767" attributes="0"/>
+                  <Component id="jLabel1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="19" max="32767" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
@@ -93,7 +93,7 @@
                   <Group type="102" attributes="0">
                       <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" pref="56" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="61" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               </Group>
@@ -135,12 +135,13 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Color"/>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="COLOR"/>
       </Properties>
       <Events>
-        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton3MousePressed"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MousePressed"/>
       </Events>
     </Component>
   </SubComponents>
