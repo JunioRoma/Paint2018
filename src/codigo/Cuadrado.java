@@ -11,7 +11,7 @@ import java.awt.geom.Rectangle2D;
 
 /**
  *
- * @author xp
+ * @author Junior
  */
 public class Cuadrado extends Rectangle2D.Double {
 

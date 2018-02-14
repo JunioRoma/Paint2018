@@ -11,7 +11,7 @@ import java.awt.geom.Ellipse2D;
 
 /**
  *
- * @author xp
+ * @author Junior
  */
 public class Circulo extends Ellipse2D.Double{
     
