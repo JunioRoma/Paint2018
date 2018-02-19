@@ -30,10 +30,10 @@ public class Forma extends Polygon {
         color = _color;
         relleno = _relleno;
     }
-    
-    public void dibujate(Graphics2D g2, int _posY) {
 
-        calculaVertices(y - _posY);
+    public void dibujate(Graphics2D g2, int _posY, int _posX) {
+
+        calculaVertices(y - _posY, x - _posX);
         g2.setColor(color);
         if (relleno) {
             g2.fill(this);
@@ -43,10 +43,10 @@ public class Forma extends Polygon {
     }
 
     //recalcula la posicion de los vertices en un poligono regular
-    private void calculaVertices(int _radio) {
+    public void calculaVertices(int _radio, double _giro) {
         for (int i = 0; i < npoints; i++) {
-            xpoints[i] = (int) (x + _radio * Math.cos(2 * Math.PI * i / npoints));
-            ypoints[i] = (int) (y + _radio * Math.sin(2 * Math.PI * i / npoints));
+            xpoints[i] = (int) (x + _radio * Math.cos((2 * Math.PI * i + _giro/30) / npoints));
+            ypoints[i] = (int) (y + _radio * Math.sin((2 * Math.PI * i + _giro/30) / npoints));
         }
     }
 }
