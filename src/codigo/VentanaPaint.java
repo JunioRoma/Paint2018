@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JFileChooser;
+import javax.swing.JMenu;
 import javax.swing.JToggleButton;
 
 /**
@@ -251,6 +252,11 @@ public class VentanaPaint extends javax.swing.JFrame {
         });
 
         jMenu1.setText("File");
+        jMenu1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jMenu1StateChanged(evt);
+            }
+        });
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem1.setText("Guardar");
@@ -418,6 +424,13 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_jMenuItem1MousePressed
+
+    private void jMenu1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jMenu1StateChanged
+      JMenu menu = (JMenu) evt.getSource();
+      if (!menu.isSelected()){
+          repaint();
+      }
+    }//GEN-LAST:event_jMenu1StateChanged
 
     /**
      * @param args the command line arguments
