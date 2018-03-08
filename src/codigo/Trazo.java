@@ -18,6 +18,6 @@ public class Trazo extends BasicStroke{
     }
     
     public Trazo (int _grosor, boolean rayas){
-        super(_grosor, BasicStroke.CAP_ROUND,BasicStroke.JOIN_MITER,20.0f,  new float[]{10.0f,10.0f},0.0f);
+        super(_grosor, BasicStroke.CAP_ROUND,BasicStroke.JOIN_BEVEL,20.0f,  new float[]{10.0f,10.0f},0.0f);
     }
 }

@@ -17,7 +17,7 @@ public class Circulo extends Forma {
 
     public Circulo(int _posX, int _posY, Color _color, boolean _relleno) {
         //Inicializa el constructor del triengulo correctamente que guarde 3 lados
-        super(_posX, _posY, 1000, _color, _relleno);
+        super(_posX, _posY, 7000, _color, _relleno);
 
     }
 }
