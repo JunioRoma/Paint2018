@@ -30,8 +30,8 @@ public class VentanaPaint extends javax.swing.JFrame {
 
     BufferedImage buffer, buffer2 = null;
     Forma miForma;
-    Color colorSeleccionado = Color.MAGENTA;
-    int formaSeleccionada = 777;  //Si vale "100" pinto circulos
+    Color colorSeleccionado = Color.BLACK;
+    int formaSeleccionada = 77;  //Si vale "100" pinto circulos
     //Si vale 4 pinto cuadrados
     //Si vale 3 pinto triangulos
     //Si vale 2 pinto pentagonos
@@ -45,10 +45,10 @@ public class VentanaPaint extends javax.swing.JFrame {
             10.0f,
             new float[]{10.0f},
             0.0f);
-    private int x;
-    private int xx;
-    private int y;
-    private int yy;
+    public int x;
+    public int xx;
+    public int y;
+    public int yy;
 
     /**
      * Creates new form VentanaPaint
@@ -227,8 +227,8 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setBackground(new java.awt.Color(102, 102, 102));
-        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel1.setBackground(new java.awt.Color(255, 204, 204));
+        jLabel1.setForeground(new java.awt.Color(255, 204, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/graphics.png"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -238,7 +238,7 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton1.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton1.setBackground(new java.awt.Color(255, 204, 204));
         jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Circle.png"))); // NOI18N
         jToggleButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jToggleButton1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -247,7 +247,7 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton2.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton2.setBackground(new java.awt.Color(255, 204, 204));
         jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Square.png"))); // NOI18N
         jToggleButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jToggleButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -256,7 +256,7 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton3.setBackground(new java.awt.Color(255, 255, 51));
+        jToggleButton3.setBackground(new java.awt.Color(255, 204, 204));
         jToggleButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Line.png"))); // NOI18N
         jToggleButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jToggleButton3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -265,7 +265,7 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton4.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton4.setBackground(new java.awt.Color(255, 204, 204));
         jToggleButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Triangle.png"))); // NOI18N
         jToggleButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jToggleButton4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -279,7 +279,7 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton5.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton5.setBackground(new java.awt.Color(255, 204, 204));
         jToggleButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Pentagono.png"))); // NOI18N
         jToggleButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jToggleButton5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -288,7 +288,7 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton6.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton6.setBackground(new java.awt.Color(255, 204, 204));
         jToggleButton6.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         jToggleButton6.setForeground(new java.awt.Color(51, 255, 51));
         jToggleButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/star.png"))); // NOI18N
@@ -304,7 +304,7 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton8.setBackground(new java.awt.Color(255, 255, 0));
+        jToggleButton8.setBackground(new java.awt.Color(255, 204, 204));
         jToggleButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Add.png"))); // NOI18N
         jToggleButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jToggleButton8.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -356,7 +356,7 @@ public class VentanaPaint extends javax.swing.JFrame {
             }
         });
 
-        jCheckBox3.setText("- - - - -");
+        jCheckBox3.setText(" - - - -");
         jCheckBox3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jCheckBox3MousePressed(evt);
@@ -436,12 +436,12 @@ public class VentanaPaint extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 6, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jToggleButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(8, 8, 8)
                         .addComponent(jCheckBox1)
@@ -518,7 +518,7 @@ public class VentanaPaint extends javax.swing.JFrame {
     private void jPanel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MousePressed
         //inicializo la forma que usaré para dibujar en el buffer
         switch (formaSeleccionada) {
-            case 1000:
+            case 10:
                 miForma = new Circulo(evt.getX(), evt.getY(), colorSeleccionado, jCheckBox1.isSelected());
                 break;
             case 2:
@@ -544,6 +544,7 @@ public class VentanaPaint extends javax.swing.JFrame {
                 x = evt.getX();
                 y = evt.getY();
                 break;
+
         }
 
 
@@ -552,14 +553,33 @@ public class VentanaPaint extends javax.swing.JFrame {
     private void jPanel1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseReleased
 
         //Tendria que actualizar los buffers para que deje pintado el pincel
-        actualizaMisPkñiosBuffers();
-        //Dibujo la froma correspodiente
-        miForma.dibujate(buffer2Graphics, evt.getY(), evt.getX(), new Trazo(jSlider1.getValue()));
-        //Actualiza el trazo en los buffers
-        if (jCheckBox3.isSelected()) {
-            miForma.dibujate(buffer2Graphics, evt.getY(), evt.getX(), new Trazo(jSlider1.getValue(), true));
-        } else {
-            miForma.dibujate(buffer2Graphics, evt.getY(), evt.getX(), new Trazo(jSlider1.getValue()));
+//        if(jToggleButton8.isSelected()){
+//        actualizaMisPkniosBuffers();
+//    }
+        switch (formaSeleccionada) {
+            case 7:
+                actualizaMisPkniosBuffers();
+                break;
+
+            case 77:
+                actualizaMisPkniosBuffers();
+                break;
+
+            default:
+                //Dibujo la froma correspodiente
+                if (formaSeleccionada != 7 || formaSeleccionada != 77) {
+                    miForma.dibujate(buffer2Graphics, evt.getY(), evt.getX(), new Trazo(jSlider1.getValue()));
+                }
+
+                //Actualiza el trazo en los buffers
+                if (jCheckBox3.isSelected()) {
+                    miForma.dibujate(buffer2Graphics, evt.getY(), evt.getX(), new Trazo(jSlider1.getValue(), true));
+                } else {
+                    miForma.dibujate(buffer2Graphics, evt.getY(), evt.getX(), new Trazo(jSlider1.getValue()));
+                }
+                actualizaMisPkniosBuffers();
+
+                break;
         }
     }//GEN-LAST:event_jPanel1MouseReleased
 
@@ -586,7 +606,7 @@ public class VentanaPaint extends javax.swing.JFrame {
 
     private void jToggleButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MousePressed
         //Elige el circulo
-        formaSeleccionada = 1000;
+        formaSeleccionada = 10;
         deSelecciona();
     }//GEN-LAST:event_jToggleButton1MousePressed
 
@@ -717,12 +737,12 @@ public class VentanaPaint extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox3ActionPerformed
 
-    
-        private void actualizaMisPkñiosBuffers(){
+    private void actualizaMisPkniosBuffers() {
         bufferGraphics.drawImage(buffer, 0, 0, null);
         buffer2Graphics.drawImage(buffer, 0, 0, null);
         bufferGraphics.drawImage(buffer2, 0, 0, null);
         buffer2Graphics.drawImage(buffer2, 0, 0, null);
+        repaint();
     }
 
     /**
